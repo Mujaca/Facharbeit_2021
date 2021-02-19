@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(0, 0, 0, 0.700);
+}
+
+.header{
+    font-size: 16px;
+    text-align: center;
+}
+
+.game-wrapper{
+    margin: auto;
+    width: 45%;
+}
+
+.control-wrapper {
+    padding-top: 50px;
+    margin: auto; 
+    width: 45%;
+}
+
+.range{
+    position: relative;
+    float: right;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 10%;
+    display: inline-block;
+}

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script language="javascript" type="text/javascript" src="./lib/p5.min.js"></script>
+        <script language="javascript" type="text/javascript" src="./lib/matrix.js"></script>
+        <script language="javascript" type="text/javascript" src="./lib/nn.js"></script>
+        <script language="javascript" type="text/javascript" src="./lib/genetic_algorithm.js"></script>
+        <script language="javascript" type="text/javascript" src="./game/pipe.js"></script>
+        <script language="javascript" type="text/javascript" src="./game/player.js"></script>
+        <script language="javascript" type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <div> Generation: <span id="generation_span">0</span> </div>
+            <div> Lebende Spieler: <span id="player_span">100</span></div>
+            <div> Highscore: <span id="highscore">0</span></div>
+            </div>
+        <div id="game-wrapper" class="game-wrapper"></div>
+        <div id="control-wrapper" class="control-wrapper">
+            <div> Ticks per Frame: <input class="range" id="tps_slider" type="range" min=1 max=20 value="1"> <span class="range" id="tps">1</span> </div>
+            <div> Maximale Population: <input class="range" id="population_slider" type="range" min=1 max=500 value="100"> <span class="range" id="population">100</span> </div>
+            <div> Pipe Spawn Rate: <input class="range" id="pipe_slider" type="range" min="25" max="80" value="75"> <span class="range" id="pipe">75</span> </div>
+            <div> Pipe Speed: <input class="range" id="pipe_speed_slider" type="range" min="3" max="15" value="5"> <span class="range" id="pipe_speed">5</span> </div>
+            <div> Pipe Spacing: <input class="range" id="pipe_spacing_slider" type="range" min="70" max="200" value="150"> <span class="range" id="pipe_spacing">150</span> </div>
+            <div class="button"> <button id="reset"> Reset Progress </button> </div>
+            <div class="button"> <button id="save"> Save best </button> </div>
+            <div id="load" class="button"> </div>
+        </div>
+    </body>
+</html>
